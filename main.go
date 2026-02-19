@@ -2,10 +2,17 @@ package main
 
 import (
 	"fast_gin/core"
-	"fmt"
+	"fast_gin/flags"
+	"fast_gin/global"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
-	cfg := core.ReadConfig()
-	fmt.Println(cfg.DB)
+	core.InitLogger()
+	flags.Run()
+	global.Config = core.ReadConfig()
+	logrus.Debugf("你好")
+	logrus.Infof("你好")
+	logrus.Warnf("你好")
+	logrus.Errorf("你好")
 }
