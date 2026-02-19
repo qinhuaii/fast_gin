@@ -23,7 +23,7 @@ func Parse() {
 	// 执行命令操作
 	flag.StringVar(&Options.Menu, "m", "", "菜单 user")
 	// 命令操作的类型
-	flag.StringVar(&Options.Type, "t", "", "类型 craete list")
+	flag.StringVar(&Options.Type, "t", "", "类型 create list")
 	// 加载版本信息
 	flag.BoolVar(&Options.Version, "v", false, "打印当前的版本")
 	// 迁移表结构
@@ -44,7 +44,7 @@ func Run() {
 	if Options.Menu == "user" {
 		var user User
 		switch Options.Type {
-		case "craete":
+		case "create":
 			user.Create()
 		case "list":
 			user.List()

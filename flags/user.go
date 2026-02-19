@@ -31,8 +31,8 @@ func (User) Create() {
 
 	var u models.UserModel
 	err = global.DB.Take(&u, "username = ?", user.Username).Error
-	if err != nil {
-		fmt.Println("用户名已存在", err)
+	if err == nil {
+		fmt.Println("用户名已存在")
 		return
 	}
 
