@@ -1,5 +1,11 @@
 db:
-  host: 127.0.0.1
-  port: 3307
-  user: test
-  password: "test123"
+  mode: mysql # mysql | pgsql | sqlite
+  db_name: "fast_db"
+  host: "192.168.200.15"
+  port: 3306
+  user: "root"
+  password: "cloud@123"
+redis:
+  addr: "192.168.200.15:6379"
+  password: "cloud@123"
+  db: 1

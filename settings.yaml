@@ -1,5 +1,11 @@
 db:
-    host: 127.0.0.1
+    mode: mysql # mysql | pgsql | sqlite
+    db_name: ""
+    host: ""
     port: 3306
-    user: root
-    password: "123456"
+    user: ""
+    password: ""
+redis:
+    addr: ""
+    password: ""
+    db: 1
