@@ -4,7 +4,6 @@ import (
 	"fast_gin/core"
 	"fast_gin/flags"
 	"fast_gin/global"
-	"fmt"
 )
 
 func main() {
@@ -14,6 +13,4 @@ func main() {
 	global.DB = core.InitGorm()       // 连接数据库
 	global.Redis = core.InitRedis()   // Redis连接
 	flags.Run()                       // -db 表结构迁移 | -v 打印版本信息 | -f 修改默认读取的配置文件
-
-	fmt.Println("Web服务")
 }
