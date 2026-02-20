@@ -9,3 +9,11 @@ redis:
     addr: "192.168.200.15:6379"
     password: "cloud@123"
     db: 1
+system:
+    mode: release  # release | debug
+    ip: 127.0.0.1
+    port: 8080
+jwt:
+    expires: 8  #有效期，单位：小时
+    issuer: qinjiaxin
+    key: asdwarsdfsewrqwghthj
