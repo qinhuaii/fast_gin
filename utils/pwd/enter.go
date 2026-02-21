@@ -15,7 +15,7 @@ func GenerateFromPassword(password string) string {
 }
 
 // comparePassword校验密码
-func comparePassword(hashedPassword string, password string) bool {
+func ComparePassword(hashedPassword string, password string) bool {
 	err := bcrypt.CompareHashAndPassword([]byte(hashedPassword), []byte(password))
 	return err == nil
 }
