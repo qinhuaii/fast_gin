@@ -17,3 +17,6 @@ jwt:
     expires: 8  #有效期，单位：小时
     issuer: qinjiaxin
     key: asdwarsdfsewrqwghthj
+upload:
+    size: 2 # 上传大小限制 单位MB
+    dir: images
